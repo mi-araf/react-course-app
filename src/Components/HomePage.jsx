@@ -8,6 +8,7 @@ const HomePage = () => {
     return (
         <div>
             <h1>HOME page</h1>
+            <h3>This is SPA - Single Page Application</h3>
 
 			<br /> <SignUpForm></SignUpForm>
 			<br /> <TodoList></TodoList>
