@@ -7,6 +7,7 @@ import SignUpForm from './Components/SignUpForm'; */
 import { Link, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
+import Stages from './Stages';
 
 function NavLink() {
 	const links = [
@@ -14,6 +15,7 @@ function NavLink() {
 		{id: 2, text: "About", path: "/about"},
 		{id: 3, text: "Contact", path: "/contact"},
 		{id: 4, text: "none", path: "*"},
+        {id: 5, text: "Stages", path: "/stages"},
 	];
 
 	return (
@@ -29,6 +31,7 @@ function NavLink() {
 				<Route path='/' element={<HomePage></HomePage>} ></Route>
 				<Route path='/about' element={<AboutPage />} ></Route>
 				<Route path='*' element={ <h1>404 page not found</h1> } ></Route>
+				<Route path='/stages' element={ <Stages></Stages> }></Route>
 			</Routes>
 			
 			<div>GG</div>
